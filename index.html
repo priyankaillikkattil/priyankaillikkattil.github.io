@@ -33,7 +33,7 @@
   left: 50%;
   transform: translate(-50%, -10%);
   background-color: transparent;
-  opacity: .8;
+  opacity: .9;
   padding: 12px;
   border-radius: 20px;
   backdrop-filter: blur(10px);
@@ -112,12 +112,66 @@
   }
 }
 
+.icon{
+    width: 80px;
+    height: 100px;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: white;
+    margin: 20px;
+    text-align: center;
+    line-height: 100px;
+    font-family: sans-serif;
+    overflow: hidden;
+    box-shadow: 5px 10px 20px rgba(150, 150, 150, .3);
+    transition: all .3s ease-out;
+}
 
-
-
+.zoom {
+  padding: 0px;
+  background-color: transparent;
+  transition: transform .2s;
+  width: 100%;
+  height: 100%;
+}
 
 .zoom:hover {
-  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+.containers {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  background-color: white;
+}
+.skill-image{
+  max-height: 100px !important;
+}
+
+.overlay {
+  position: absolute !important; 
+  /* background: rgb(0, 0, 0); */
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #ffc200; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  /* color: white; */
+  font-size: 8px;
+  padding: 10px;
+  text-align: center;
+  left: 0%;
+  top: 30%;
+}
+
+.containers:hover .overlay {
+  opacity: 1;
+}
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 
@@ -215,7 +269,7 @@ https://www.tooplate.com/view/2115-marvel
             </div>
         </div>
     </section>
-<section class="skill py-5" id="skill">
+<!-- <section class="skill py-5" id="skill">
   <div class="row">
     <div class="col-lg-11 text-center mx-auto col-12">
             <div class="col-lg-8 mx-auto"><h2>Skills</h2></div>
@@ -398,7 +452,128 @@ https://www.tooplate.com/view/2115-marvel
   </table>
   </div>
   
+</section> -->
+<section class="skill py-5" id="skill">
+  <div class="container">
+          
+          <div class="row">
+            <div class="col-lg-11 text-center mx-auto col-12">
+
+                <div class="col-lg-8 mx-auto">
+                  <h2>Skills</h2>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-1  icon zoom containers">
+                    <img src="images/skill/icons8-html-60.png"   class="img-fluid skill-image image" alt="project image">
+                    <div class="overlay">HTML</div>
+                  </div>
+                  
+                  <div class="col-md-1 icon zoom containers">
+                    <img src="images/skill/icons8-css-60.png" class="img-fluid skill-image image" alt="project image">
+                    <div class="overlay">Css</div>
+                  </div>
+                  
+                  <div class="col-md-1 icon zoom containers" >
+                    <img src="images/skill/icons8-javascript-60.png" class="img-fluid skill-image image" alt="project image">
+                    <div class="overlay">JavaScript</div>
+                  </div>
+               
+                  <div class="col-md-1 icon zoom containers">
+                    <img src="images/skill/icons8-jquery-60.png" class="img-fluid skill-image image" alt="project image">
+                    <div class="overlay">JQuery</div>
+                  </div>
+
+                  <div class="col-md-1 icon zoom containers">
+                    <img src="images/skill/icons8-bootstrap-60.png" class="img-fluid skill-image image" alt="project image">
+                    <div class="overlay">Bootstrap</div>
+                  </div>
+                  
+                  <div class="col-md-1 icon zoom containers">
+                    <img src="images/skill/icons8-react-native-60.png" class="img-fluid skill-image image" alt="project image">
+                    <div class="overlay">React</div>
+                  </div>
+                  <div class="col-md-1 icon zoom containers">
+                    <img src="images/skill/icons8-vue.js-an-open-source-javascript-framework-for-building-user-interfaces-and-single-page-applications-60.png" class="img-fluid skill-image image" alt="project image">
+                    <div class="overlay">Vue Js</div>
+                  </div> <div class="col-md-1 icon zoom containers">
+                    <img src="images/skill/images (1).png" class="img-fluid skill-image image" alt="project image">
+                    <div class="overlay">Livewire</div>
+                  </div>
+                  <div class="col-md-1 icon zoom containers">
+                    <img src="images/skill/icons8-java-60.png" class="img-fluid skill-image image" alt="project image">
+                    <div class="overlay">Core Java</div>
+                  </div>
+                  <div class="col-md-1 icon zoom containers">
+                    <img src="images/skill/icons8-php-60.png" class="img-fluid skill-image image" alt="project image">
+                    <div class="overlay">PHP</div>
+                  </div>
+                  <div class="col-md-1 icon zoom containers">
+                    <img src="images/skill/icons8-laravel-60.png" class="img-fluid skill-image image" alt="project image">
+                    <div class="overlay">Laravel</div>
+                  </div>
+                  <div class="col-md-1 icon zoom containers">
+                    <img src="images/skill/zend (1).png" class="img-fluid skill-image image" alt="project image">
+                    <div class="overlay">Zend</div>
+                  </div>
+
+                  
+                  <div class="col-md-1 icon zoom containers">
+                    <img src="images/skill/icons8-nodejs-60.png" class="img-fluid skill-image image" alt="project image">
+                    <div class="overlay">Node Js</div>
+                  </div>
+                  <div class="col-md-1 icon zoom containers">
+                    <img src="images/skill/icons8-express-js-60.png" class="img-fluid skill-image image" alt="project image">
+                    <div class="overlay">Express Js</div>
+                  </div>
+                  <div class="col-md-1 icon zoom containers">
+                    <img src="images/skill/icons8-flutter-60.png" class="img-fluid skill-image image" alt="project image">
+                    <div class="overlay">Flutter</div>
+                  </div>
+                  <div class="col-md-1 icon zoom containers">
+                    <img src="images/skill/icons8-dart-60.png" class="img-fluid skill-image image" alt="project image">
+                    <div class="overlay">Dart</div>
+                  </div>
+                  <div class="col-md-1 icon zoom containers">
+                    <img src="images/skill/icons8-mysql-60.png" class="img-fluid skill-image image" alt="project image">
+                    <div class="overlay">MySql</div>
+                  </div>
+                  <div class="col-md-1 icon zoom containers">
+                    <img src="images/skill/icons8-postgresql-60.png" class="img-fluid skill-image image" alt="project image">
+                    <div class="overlay">PostgreSQL</div>
+                  </div>
+                  <div class="col-md-1 icon zoom containers" >
+                    <img src="images/skill/icons8-git-60.png" class="img-fluid skill-image image" alt="project image">
+                    <div class="overlay">Git</div>
+                  </div>
+                  <div class="col-md-1 icon zoom containers">
+                    <img src="images/skill/icons8-docker-a-set-of-coupled-software-as-a-service-60.png" class="img-fluid skill-image image" alt="project image">
+                    <div class="overlay">Docker</div>
+                  </div>
+                  <div class="col-md-1 icon zoom containers">
+                    <img src="images/skill/icons8-firebase-a-google's-mobile-platform-that-helps-you-quickly-develop-high-quality-apps-60.png" class="img-fluid skill-image image" alt="project image">
+                    <div class="overlay">Firebase</div>
+                  </div>
+                  <div class="col-md-1 icon zoom containers">
+                    <img src="images/skill/icons8-google-analytics-60.png" class="img-fluid skill-image image" alt="project image">
+                    <div class="overlay">G Analytics</div>
+                  </div>
+                  <div class="col-md-1 icon zoom containers">
+                    <img src="images/skill/icons8-postman-api-60.png" class="img-fluid skill-image image" alt="project image">
+                    <div class="overlay">Postman</div>
+                  </div>
+                 
+                  <div class="col-md-1 icon zoom containers">
+                    <img src="images/skill/icons8-stripe-60.png" class="img-fluid skill-image image" alt="project image">
+                    <div class="overlay">Stripe</div>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+  </div>
 </section>
+
     <!-- PROJECTS -->
     <section class="project py-5" id="project">
         <div class="container">
@@ -413,7 +588,7 @@ https://www.tooplate.com/view/2115-marvel
                       <div class="owl-carousel owl-theme">
                         <div class="item">
                           <div class="project-info">
-                            <img src="images/projects/traccs.png" class="img-fluid" alt="project image">
+                            <img src="images/projects/traccs.png" style="max-height: 300px !important;" class="img-fluid" alt="project image">
                             <div class="transparent-card">
                               <h4>Traccs by Nucore Software Solutions Private Limited </h4>
                               <p>Technologys: PHP, Zend Framework, PostgreSQL,MySQL HTML, CSS, JavaScript, jQuery<br>
@@ -427,7 +602,7 @@ https://www.tooplate.com/view/2115-marvel
                         </div>
                         <div class="item">
                           <div class="project-info">
-                            <img src="images/projects/smoking-website.png" class="img-fluid" alt="project image">
+                            <img src="images/projects/smoking-website.png" style="max-height: 300px !important;" class="img-fluid" alt="project image">
                             <div class="transparent-card">
                               <h4>Smoking Briskets by The Cloud </h4>
                               <p>Technologys: PHP, MySQL, Flutter, Stripe Payment, Google Analytics <br>
@@ -441,7 +616,7 @@ https://www.tooplate.com/view/2115-marvel
                         </div>
                         <div class="item">
                           <div class="project-info">
-                            <img src="images/projects/hyloca.png" class="img-fluid" alt="project image">
+                            <img src="images/projects/hyloca.png" style="max-height: 300px !important;" class="img-fluid" alt="project image">
                             <div class="transparent-card">
                               <h4>Hyloca by Nexart Technosolutions Private Limited </h4>
                               <p>Technologys: PHP, MySQL, Flutter, Firebase, RazorPay Payment <br>
@@ -455,7 +630,7 @@ https://www.tooplate.com/view/2115-marvel
                         </div>
                         <div class="item">
                           <div class="project-info">
-                            <img src="images/projects/sushi.png" class="img-fluid" alt="project image">
+                            <img src="images/projects/sushi.png" style="max-height: 300px !important;" class="img-fluid" alt="project image">
                             <div class="transparent-card">
                               <h4>Sushi Central by The Cloud</h4>
                               <p>Technologys: PHP, HTML, Bootstrap, CSS ,JavaScript, JQuery, Google Analytics, Facebook Pixel<br>
@@ -469,7 +644,7 @@ https://www.tooplate.com/view/2115-marvel
                         </div>
                         <div class="item">
                           <div class="project-info">
-                            <img src="images/projects/litebox.png" class="img-fluid" alt="project image">
+                            <img src="images/projects/litebox.png" style="max-height: 300px !important;" class="img-fluid" alt="project image">
                             <div class="transparent-card" >
                               <h4>Litebox by Nexart Technosolutions Private Limited </h4>
                               <p>Technologys: PHP, MySQL, Laravel, vue.js<br> 
@@ -483,7 +658,7 @@ https://www.tooplate.com/view/2115-marvel
                         </div>
                         <div class="item">
                           <div class="project-info">
-                            <img src="images/projects/kitchen.png" class="img-fluid" alt="project image">
+                            <img src="images/projects/kitchen.png" style="max-height: 300px !important;" class="img-fluid" alt="project image">
                             <div class="transparent-card">
                               <h4>Cloud Kitchen App by The Cloud</h4>
                               <p>Technologys: PHP, MySQL, Redis, Flutter, REST API, Microservices<br>
@@ -497,7 +672,7 @@ https://www.tooplate.com/view/2115-marvel
                         </div>
                         <div class="item">
                           <div class="project-info">
-                            <img src="images/projects/i4g.png" class="img-fluid" alt="project image">
+                            <img src="images/projects/i4g.png" style="max-height: 300px !important;" class="img-fluid" alt="project image">
                             <div class="transparent-card">
                               <h4>Innovate4Good by Nexart Technosolutions Private Limited </h4>
                               <p>Technologys: PHP, MySQL, Laravel, Bootstrap, JavaScript, CSS, HTML<br>
